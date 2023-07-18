@@ -1,116 +1,58 @@
 <!DOCTYPE html>
-<html lang="fr">
-
-<head>
-    <!-- Meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-
-    <!-- Custom CSS -->
-    <link href="style.css" rel="stylesheet">
-
-    <link rel="icon" type="image/png" sizes="16x16" href="images/logo.png">
-    <title>Comité Montesquieu-Lauragais</title>
-</head>
-
-<body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-            <a class="navbar-brand" href="#">Comité Montesquieu-Lauragais</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="./index.html">L'actualité</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./lecomite/lecomite.html">Le comité</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./fetes/anciennesfetes.html">Nos fêtes</a>
-                    </li>
-                    <li>
-                        <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#popup1">Contact & réseaux</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <!-- Main content -->
-    <main class="container my-4">
-        <div class="row">
-            <div class="col-md-4">
-                <h1 class="h3">Montesquieu-Lauragais</h1>
-                <div class="row">
-                    <div class="col-6 mb-3"><img src="images/montesquieu1.jpg" class="img-fluid"></div>
-                    <div class="col-6 mb-3"><img src="images/montesquieu2.jpg" class="img-fluid"></div>
-                    <div class="col-6 mb-3"><img src="images/montesquieu3.jpg" class="img-fluid"></div>
-                    <div class="col-6 mb-3"><img src="images/montesquieu4.jpg" class="img-fluid"></div>
-                    <div class="col-6 mb-3"><img src="images/montesquieu5.jpg" class="img-fluid"></div>
-                </div>
-            </div>
-            <div class="col-md-8">
-                <h2 class="h3">L'actualité :</h2>
+<html>
+    <head>
+        <link rel="stylesheet" href="./style.css">
+        <link rel="icon" type="image/png" sizes="16x16" href="images/logo.png">
+        <meta charset="utf-8"/>
+        <title>Comité Montesquieu-Lauragais</title>
+    </head>
+    <body class="index">
+        <center>
+        <b><h1>Bienvenue sur le site du comité des fêtes de Montesquieu-Lauragais !</b></h1></br></br>
+        <nav>
+            <ul>
+                <li><a href="./index.html">L'actualité</a></li>
+                <li><a href="./lecomite/lecomite.html">Le comité</a></li>
+                <li><a href="./fetes/anciennesfetes.html">Nos fêtes</a></li>
+                <li><a class="button" href="#popup1">Contact & réseaux</a></li>
+            </ul>
+        </nav>
+        
+        <section>
+            <aside>
+                <center>
+                <h1>Montesquieu-Lauragais</h1>
+                    <img src="images/montesquieu1.jpg" width="200" height="250"></a><br><br>
+                    <img src="images/montesquieu2.jpg"  width="200" height="250"></a><br><br>
+                    <img src="images/montesquieu3.jpg" width="200" height="200"></a><br><br>
+                    <img src="images/montesquieu4.jpg"  width="200" height="200"></a><br><br>
+                    <img src="images/montesquieu5.jpg"  width="200" height="200"></a><br><br>
+                </center>
+            </aside>
+            <article>
+                <h2>L'actualité :</h2>
                 <p id="texte">La fête du village arrive à grand pas ! On vous attend le week-end du 21, 22 et 23 juillet 2023 pour fêter la fête de la <br>Saint Jacques ! </p><br><br>
-                <img src="images/recto.jpg" id="recto" class="img-fluid" alt="affiche">
+                <center><img src="images/recto.jpg" id="recto" alt="affiche"  width="380" height="500"></center><br>
                 <p id="texte">Le comité a prévu de nombreuses activités, pétanque, karoaké, jeux, musiques ou encore soirée normande... Découvrez ici le programme. </p>
-                <img src="images/verso.jpg" id="verso" class="img-fluid" alt="programme">
+                <center><img src="images/verso.jpg" id="verso" alt="programme"  width="900" height="600"></center><br>
                 <p id="texte">N'oubliez pas de réserver le repas normand du dimanche soir !</p>
-            </div>
-        </div>
-    </main>
-    <!-- Contact & Réseaux Start -->
-    <div class="modal fade" id="popup1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Contact & Réseaux</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
+            </article>
+        </section>
+        <div id="popup1" class="overlay">
+            <div class="popup">
+                <h1>Contact & réseaux</h1>
+                <a class="close" href="#">&times;</a>
+                <div class="content">
                     Si vous voulez réserver le repas ou juste besoin de renseignements, voici nos coordonnées :<br><br>
                     <address>
-                        <p>
-
-                            <ul>
-                                <li>
-                                    Mail : <a href="mailto:cdfmontesquieulgs@yahoo.fr">cdfmontesquieulgs@yahoo.fr</a>
-                                </li>
-                                <li>
-                                    Téléphone : <u>06 82 21 22 02</u>
-                                </li>
-                            </ul>
-                            Suivez-nous sur les réseaux !<br> <br>
-                            <ul>
-                                <li>
-                                    Instagram : <a target="_blank" title="Instagram" href="https://www.instagram.com/cdf_montesquieulgs/" rel="nofollow""><img src=" images/instagram.jpg" alt="instagram" width="30" height="30" /> @cdf_montesquieulgs </a>
-                                </li>
-                                <li>
-                                    Facebook : <a target="_blank" title="Facebook" href="https://www.facebook.com/profile.php?id=100067732261798" rel="nofollow""><img src=" images/facebook.png" alt="Facebook" width="30" height="30" /> Comité des Fêtes de Montesquieu Lauragais</a>
-                                </li>
-
-                            </ul>
-
+                        <a href="mailto:cdfmontesquieulgs@yahoo.fr">cdfmontesquieulgs@yahoo.fr</a>
+                        <p>06 82 21 22 02<br><br> Suivez-nous sur les réseaux !<br> <br> Instagram : @cdf_montesquieulgs <br> Facebook : Comité des Fêtes de Montesquieu Lauragais
                         </p>
+                        <a  target="_blank" title="Facebook" href="https://www.facebook.com/profile.php?id=100067732261798" rel="nofollow" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=500,width=700');"><img src="images/facebook.png" alt="Facebook" width="30" height="30"/></a>
+                        <a  target="_blank" title="Instagram" href="https://www.instagram.com/cdf_montesquieulgs/" rel="nofollow" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=500,width=700');"><img src="images/instagram.jpg" alt="instagram" width="30" height="30"/></a>
                     </address>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Contact & Réseaux End -->
-
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-
-</body>
-
+    </body>
 </html>

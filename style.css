@@ -1,39 +1,200 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+/* page et fond de page */
+.index{
+    background-image: url(images/fond1.jpg);
+    background-repeat : repeat;
+    background-position: none;
+}
+.comitebody {
+    width: 900px;
+    margin: auto;
+   background-color: #dfdfdf;
+}
+header {
+    background-image:url(images/logo.jpg);
+    background-repeat: no-repeat;
+    }
+    
+/*texte*/
+h1{
+   font-weight: bold;
+}
+h2{
+    text-indent: 20px;
+}
+.title_menu{
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#texte{
+    font-family: Helvetica, sans-serif;
+}
+
+/*
+#comite{
+    font-family: 'Courier New', Courier, monospace;
+}*/
+ 
+a:link{
+    text-decoration: none
+}
+
+/*image*/
+
+#photoaside{
+    text-align:center;
+    margin:auto;
+    display:flex;
+}
+#boulangerfrance{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+#fleche{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+/*mise en forme menu horizontal gateaux */
+.navcomite{
+    width: 900px;
+    border: 1px solid  rgb(227,232,255);
+    text-align: center;
+    background-color:   rgb(227,232,255);
+    margin-bottom: 5px;
+}
+
+/*mise en forme menu horizontal */
+nav{
+width: 1185px;
+border: 1px solid  rgb(227,232,255);
+text-align: center;
+background-color:  rgb(227,232,255);
+margin-bottom: 5px;
+}
+
+nav ul{
+    list-style-type: none; 
+}
+
+nav li{
+    display: inline-block; 
+    margin-right: 50px;
+}
+/*mise en forme bloc droit et gauche index */
+
+article, aside{
+    display: inline-block; 
+    vertical-align: top;
+    text-align: justify;
+    word-wrap: break-word;
+}
+/*mise en forme bloc droit index */
+
+article{
+	width: 910px;
+	min-height: 400px;
+	background-color: #f9fa82;
+	margin-bottom: 5px;
+}
+/*mise en forme bloc gauche index */
+
+aside{
+	position: relative;
+	width: 250px;
+	padding: 10px;
+	background-color: #cf2222;
+	display: inline-block;
+}
+
+/* Positionnement du logo à gauche du texte */
+
+.image-and-text img {
+  float: left;
+  margin-top: 40px;
+}
+
+
+/*Mise en forme liste à puces composition du bureau*/
+
+#composition {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #composition li {
+    text-align: left; /* Alignement du texte à gauche */
+    margin-bottom: 10px; /* Espacement entre les éléments de la liste */
+  }
+  
+  .role {
+    font-weight: bold; /* Style en gras pour les rôles (ex: Président, Vice président, etc.) */
+    display: inline-block;
+    width: 150px; /* Ajustez cette valeur en fonction de la longueur des rôles */
+  }
+    #composition li span.role:last-child {
+    text-align: left;
+  }
+
+/*Mise en forme photos anciennes fetes */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .grid-item {
+    text-align: center;
+  }
+  
+  .grid-item img {
+    max-width: 100%;
+  }
+  
+  .grid-item p {
+    margin-top: 10px;
+  }
+  
+
+/*mise en forme fenetre popup*/
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .overlay:target {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 5s ease-in-out;
+  }
+  .popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
     color: #333;
-}
-
-nav {
-    background-color: #ffffff;
-    border-bottom: 1px solid #ddd;
-}
-
-nav ul li a {
-    color: #555;
-}
-
-.nav ul li a:hover {
-    color: #007bff;
-}
-
-h1,
-h2 {
-    color: #007bff;
-}
-
-.modal-content {
-    background-color: #fafafa;
-}
-
-.modal-title {
-    color: #333;
-}
-
-.modal-body {
-    color: #555;
-}
-
-.modal-footer {
-    background-color: #f8f9fa;
-}
+  }
