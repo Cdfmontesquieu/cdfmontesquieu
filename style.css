@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+nav {
+    background-color: #ffffff;
+    border-bottom: 1px solid #ddd;
+}
+
+nav ul li a {
+    color: #555;
+}
+
+.nav ul li a:hover {
+    color: #007bff;
+}
+
+h1,
+h2 {
+    color: #007bff;
+}
+
+.modal-content {
+    background-color: #fafafa;
+}
+
+.modal-title {
+    color: #333;
+}
+
+.modal-body {
+    color: #555;
+}
+
+.modal-footer {
+    background-color: #f8f9fa;
+}
