@@ -1,12 +1,12 @@
 /* page et fond de page */
-body {
+.index {
     background-image: url(images/fond1.jpg);
     background-repeat: repeat;
     background-position: none;
 }
 
 .comitebody {
-    max-width: 900px;
+    width: 900px;
     margin: auto;
     background-color: #dfdfdf;
 }
@@ -16,7 +16,7 @@ header {
     background-repeat: no-repeat;
 }
 
-/* texte */
+/*texte*/
 h1 {
     font-weight: bold;
 }
@@ -36,13 +36,48 @@ h2 {
     font-family: Helvetica, sans-serif;
 }
 
+/*
+#comite{
+    font-family: 'Courier New', Courier, monospace;
+}*/
+
 a:link {
     text-decoration: none
 }
 
-/* mise en forme menu horizontal */
+/*image*/
+
+#photoaside {
+    text-align: center;
+    margin: auto;
+    display: flex;
+}
+
+#boulangerfrance {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+
+#fleche {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+/*mise en forme menu horizontal gateaux */
+.navcomite {
+    width: 900px;
+    border: 1px solid rgb(227, 232, 255);
+    text-align: center;
+    background-color: rgb(227, 232, 255);
+    margin-bottom: 5px;
+}
+
+/*mise en forme menu horizontal */
 nav {
-    width: 100%;
+    width: 1185px;
     border: 1px solid rgb(227, 232, 255);
     text-align: center;
     background-color: rgb(227, 232, 255);
@@ -58,34 +93,91 @@ nav li {
     margin-right: 50px;
 }
 
-/* mise en forme bloc droit et gauche index */
+/*mise en forme bloc droit et gauche index */
+
 article,
 aside {
-    box-sizing: border-box;
-    padding: 20px;
+    display: inline-block;
+    vertical-align: top;
     text-align: justify;
     word-wrap: break-word;
 }
 
+/*mise en forme bloc droit index */
+
 article {
-    width: 100%;
+    width: 910px;
+    min-height: 400px;
     background-color: #f9fa82;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 }
+
+/*mise en forme bloc gauche index */
 
 aside {
-    width: 100%;
+    position: relative;
+    width: 250px;
+    padding: 10px;
     background-color: #cf2222;
-    margin-bottom: 20px;
+    display: inline-block;
 }
 
-/* images */
-img {
+/* Positionnement du logo à gauche du texte */
+
+.image-and-text img {
+    float: left;
+    margin-top: 40px;
+}
+
+
+/*Mise en forme liste à puces composition du bureau*/
+
+#composition {
+    list-style: none;
+    padding: 0;
+}
+
+#composition li {
+    text-align: left;
+    /* Alignement du texte à gauche */
+    margin-bottom: 10px;
+    /* Espacement entre les éléments de la liste */
+}
+
+.role {
+    font-weight: bold;
+    /* Style en gras pour les rôles (ex: Président, Vice président, etc.) */
+    display: inline-block;
+    width: 150px;
+    /* Ajustez cette valeur en fonction de la longueur des rôles */
+}
+
+#composition li span.role:last-child {
+    text-align: left;
+}
+
+/*Mise en forme photos anciennes fetes */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.grid-item {
+    text-align: center;
+}
+
+.grid-item img {
     max-width: 100%;
-    height: auto;
 }
 
-/* mise en forme fenetre popup */
+.grid-item p {
+    margin-top: 10px;
+}
+
+
+/*mise en forme fenetre popup*/
+
 .overlay {
     position: fixed;
     top: 0;
@@ -104,11 +196,11 @@ img {
 }
 
 .popup {
-    max-width: 90%;
-    margin: 20px auto;
+    margin: 70px auto;
     padding: 20px;
     background: #fff;
     border-radius: 5px;
+    width: 30%;
     position: relative;
     transition: all 5s ease-in-out;
 }
@@ -122,30 +214,4 @@ img {
     font-weight: bold;
     text-decoration: none;
     color: #333;
-}
-
-/* Responsive design */
-@media (min-width: 768px) {
-
-    article,
-    aside {
-        display: inline-block;
-        vertical-align: top;
-    }
-
-    article {
-        width: 70%;
-        min-height: 400px;
-    }
-
-    aside {
-        width: 25%;
-        position: relative;
-    }
-
-    nav ul {
-        display: flex;
-        justify-content: space-between;
-        padding: 0 50px;
-    }
 }
